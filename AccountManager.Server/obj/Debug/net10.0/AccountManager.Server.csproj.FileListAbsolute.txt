@@ -20,6 +20,7 @@ C:\Users\toosv\OneDrive\Документы\AccountManager\AccountManager.Server\
 C:\Users\toosv\OneDrive\Документы\AccountManager\AccountManager.Server\obj\Debug\net10.0\AccountManager.Server.AssemblyInfo.cs
 C:\Users\toosv\OneDrive\Документы\AccountManager\AccountManager.Server\obj\Debug\net10.0\AccountManager.Server.csproj.CoreCompileInputs.cache
 C:\Users\toosv\OneDrive\Документы\AccountManager\AccountManager.Server\obj\Debug\net10.0\AccountManager.Server.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\toosv\OneDrive\Документы\AccountManager\AccountManager.Server\obj\Debug\net10.0\AccountManager.Server.sourcelink.json
 C:\Users\toosv\OneDrive\Документы\AccountManager\AccountManager.Server\obj\Debug\net10.0\rjimswa.dswa.cache.json
 C:\Users\toosv\OneDrive\Документы\AccountManager\AccountManager.Server\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
 C:\Users\toosv\OneDrive\Документы\AccountManager\AccountManager.Server\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json

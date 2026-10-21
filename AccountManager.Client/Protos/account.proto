@@ -1,11 +1,22 @@
 syntax = "proto3";
 
-option csharp_namespace = "AccountManager.Protos";
+
+option csharp_namespace = "AccountManager.Protos"; 
+
 
 package account;
 
+// Подключаем пустое сообщение для методов без параметров (например, для получения всех)
+import "google/protobuf/empty.proto";
+
 service AccountService {
   rpc GetAccount (AccountRequest) returns (AccountReply);
+  
+  // Новые методы:
+  rpc GetAllAccounts (google.protobuf.Empty) returns (AccountListReply);
+  rpc CreateAccount (CreateAccountRequest) returns (AccountReply);
+  rpc UpdateAccount (UpdateAccountRequest) returns (AccountReply);
+  rpc DeleteAccount (AccountRequest) returns (google.protobuf.Empty);
 }
 
 message AccountRequest {
@@ -13,6 +24,26 @@ message AccountRequest {
 }
 
 message AccountReply {
+  int32 account_id = 1;
+  string username = 2;
+  string email = 3;
+}
+
+// --- Новые сообщения ---
+
+// Для получения списка всех аккаунтов
+message AccountListReply {
+  repeated AccountReply accounts = 1;
+}
+
+// Для создания аккаунта (ID не передаем, его сгенерирует сервер)
+message CreateAccountRequest {
+  string username = 1;
+  string email = 2;
+}
+
+// Для обновления аккаунта
+message UpdateAccountRequest {
   int32 account_id = 1;
   string username = 2;
   string email = 3;

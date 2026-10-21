@@ -8,9 +8,6 @@
 using grpc = global::Grpc.Core;
 
 namespace AccountManager.Server {
-  /// <summary>
-  /// Сервис для работы с аккаунтом
-  /// </summary>
   public static partial class AccountService
   {
     static readonly string __ServiceName = "account.AccountService";
@@ -52,6 +49,14 @@ namespace AccountManager.Server {
     static readonly grpc::Marshaller<global::AccountManager.Server.AccountRequest> __Marshaller_account_AccountRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::AccountManager.Server.AccountRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::AccountManager.Server.AccountReply> __Marshaller_account_AccountReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::AccountManager.Server.AccountReply.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_google_protobuf_Empty = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Protobuf.WellKnownTypes.Empty.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::AccountManager.Server.AccountListReply> __Marshaller_account_AccountListReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::AccountManager.Server.AccountListReply.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::AccountManager.Server.CreateAccountRequest> __Marshaller_account_CreateAccountRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::AccountManager.Server.CreateAccountRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::AccountManager.Server.UpdateAccountRequest> __Marshaller_account_UpdateAccountRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::AccountManager.Server.UpdateAccountRequest.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::AccountManager.Server.AccountRequest, global::AccountManager.Server.AccountReply> __Method_GetAccount = new grpc::Method<global::AccountManager.Server.AccountRequest, global::AccountManager.Server.AccountReply>(
@@ -60,6 +65,38 @@ namespace AccountManager.Server {
         "GetAccount",
         __Marshaller_account_AccountRequest,
         __Marshaller_account_AccountReply);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::AccountManager.Server.AccountListReply> __Method_GetAllAccounts = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::AccountManager.Server.AccountListReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetAllAccounts",
+        __Marshaller_google_protobuf_Empty,
+        __Marshaller_account_AccountListReply);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::AccountManager.Server.CreateAccountRequest, global::AccountManager.Server.AccountReply> __Method_CreateAccount = new grpc::Method<global::AccountManager.Server.CreateAccountRequest, global::AccountManager.Server.AccountReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "CreateAccount",
+        __Marshaller_account_CreateAccountRequest,
+        __Marshaller_account_AccountReply);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::AccountManager.Server.UpdateAccountRequest, global::AccountManager.Server.AccountReply> __Method_UpdateAccount = new grpc::Method<global::AccountManager.Server.UpdateAccountRequest, global::AccountManager.Server.AccountReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "UpdateAccount",
+        __Marshaller_account_UpdateAccountRequest,
+        __Marshaller_account_AccountReply);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::AccountManager.Server.AccountRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_DeleteAccount = new grpc::Method<global::AccountManager.Server.AccountRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeleteAccount",
+        __Marshaller_account_AccountRequest,
+        __Marshaller_google_protobuf_Empty);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -71,14 +108,38 @@ namespace AccountManager.Server {
     [grpc::BindServiceMethod(typeof(AccountService), "BindService")]
     public abstract partial class AccountServiceBase
     {
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::AccountManager.Server.AccountReply> GetAccount(global::AccountManager.Server.AccountRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
       /// <summary>
-      /// Метод получения данных об аккаунте
+      /// Новые методы:
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::AccountManager.Server.AccountReply> GetAccount(global::AccountManager.Server.AccountRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::AccountManager.Server.AccountListReply> GetAllAccounts(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::AccountManager.Server.AccountReply> CreateAccount(global::AccountManager.Server.CreateAccountRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::AccountManager.Server.AccountReply> UpdateAccount(global::AccountManager.Server.UpdateAccountRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> DeleteAccount(global::AccountManager.Server.AccountRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -91,7 +152,11 @@ namespace AccountManager.Server {
     public static grpc::ServerServiceDefinition BindService(AccountServiceBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_GetAccount, serviceImpl.GetAccount).Build();
+          .AddMethod(__Method_GetAccount, serviceImpl.GetAccount)
+          .AddMethod(__Method_GetAllAccounts, serviceImpl.GetAllAccounts)
+          .AddMethod(__Method_CreateAccount, serviceImpl.CreateAccount)
+          .AddMethod(__Method_UpdateAccount, serviceImpl.UpdateAccount)
+          .AddMethod(__Method_DeleteAccount, serviceImpl.DeleteAccount).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -102,6 +167,10 @@ namespace AccountManager.Server {
     public static void BindService(grpc::ServiceBinderBase serviceBinder, AccountServiceBase serviceImpl)
     {
       serviceBinder.AddMethod(__Method_GetAccount, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::AccountManager.Server.AccountRequest, global::AccountManager.Server.AccountReply>(serviceImpl.GetAccount));
+      serviceBinder.AddMethod(__Method_GetAllAccounts, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Protobuf.WellKnownTypes.Empty, global::AccountManager.Server.AccountListReply>(serviceImpl.GetAllAccounts));
+      serviceBinder.AddMethod(__Method_CreateAccount, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::AccountManager.Server.CreateAccountRequest, global::AccountManager.Server.AccountReply>(serviceImpl.CreateAccount));
+      serviceBinder.AddMethod(__Method_UpdateAccount, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::AccountManager.Server.UpdateAccountRequest, global::AccountManager.Server.AccountReply>(serviceImpl.UpdateAccount));
+      serviceBinder.AddMethod(__Method_DeleteAccount, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::AccountManager.Server.AccountRequest, global::Google.Protobuf.WellKnownTypes.Empty>(serviceImpl.DeleteAccount));
     }
 
   }

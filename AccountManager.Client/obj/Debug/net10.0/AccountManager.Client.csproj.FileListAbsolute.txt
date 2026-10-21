@@ -14,6 +14,7 @@ C:\Users\toosv\OneDrive\Документы\AccountManager\AccountManager.Client\
 C:\Users\toosv\OneDrive\Документы\AccountManager\AccountManager.Client\obj\Debug\net10.0\AccountManager.Client.AssemblyInfoInputs.cache
 C:\Users\toosv\OneDrive\Документы\AccountManager\AccountManager.Client\obj\Debug\net10.0\AccountManager.Client.AssemblyInfo.cs
 C:\Users\toosv\OneDrive\Документы\AccountManager\AccountManager.Client\obj\Debug\net10.0\AccountManager.Client.csproj.CoreCompileInputs.cache
+C:\Users\toosv\OneDrive\Документы\AccountManager\AccountManager.Client\obj\Debug\net10.0\AccountManager.Client.sourcelink.json
 C:\Users\toosv\OneDrive\Документы\AccountManager\AccountManager.Client\obj\Debug\net10.0\AccountM.5110C380.Up2Date
 C:\Users\toosv\OneDrive\Документы\AccountManager\AccountManager.Client\obj\Debug\net10.0\AccountManager.Client.dll
 C:\Users\toosv\OneDrive\Документы\AccountManager\AccountManager.Client\obj\Debug\net10.0\refint\AccountManager.Client.dll
