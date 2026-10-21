@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option csharp_namespace = "AccountManager.Protos";
+
+package account;
+
+service AccountService {
+  rpc GetAccount (AccountRequest) returns (AccountReply);
+}
+
+message AccountRequest {
+  int32 account_id = 1;
+}
+
+message AccountReply {
+  int32 account_id = 1;
+  string username = 2;
+  string email = 3;
+}

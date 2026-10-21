@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option csharp_namespace = "AccountManager.Server";
+
+package account;
+
+// Сервис для работы с аккаунтом
+service AccountService {
+  // Метод получения данных об аккаунте
+  rpc GetAccount (AccountRequest) returns (AccountReply);
+}
+
+message AccountRequest {
+  int32 account_id = 1;
+}
+
+message AccountReply {
+  int32 account_id = 1;
+  string username = 2;
+  string email = 3;
+}

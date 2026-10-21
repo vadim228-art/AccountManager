@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="compose.yaml" />
+  </Folder>
+  <Project Path="AccountManager.Client/AccountManager.Client.csproj" />
+  <Project Path="AccountManager.Server/AccountManager.Server.csproj" />
+</Solution>

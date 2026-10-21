@@ -1,0 +1,7 @@
+﻿services:
+  accountmanager.server:
+    image: accountmanager.server
+    build:
+      context: .
+      dockerfile: AccountManager.Server/Dockerfile
+
